@@ -12,6 +12,11 @@ repositories {
 	mavenCentral()
 }
 
+// remove -plain-version. jar from the build
+jar {
+	enabled = false
+}
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
